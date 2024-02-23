@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18F0DBFAC31596DA8E52A650 /* Pods_Keventy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13473EB65024E32D4EE70754 /* Pods_Keventy.framework */; };
+		439FB950C12F52B0F9F9C4AC /* Pods_Keventy_KeventyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B980C9880855CCB6BE1C34 /* Pods_Keventy_KeventyUITests.framework */; };
+		60C03D4FE369741546EF75F3 /* Pods_KeventyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB440403B7AADD878706DEE /* Pods_KeventyTests.framework */; };
+		717F89E82B875D4A00C58DD0 /* KeventyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F89E72B875D4A00C58DD0 /* KeventyApp.swift */; };
+		717F89EA2B875D4A00C58DD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F89E92B875D4A00C58DD0 /* ContentView.swift */; };
+		717F89EC2B875D4D00C58DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717F89EB2B875D4D00C58DD0 /* Assets.xcassets */; };
+		717F89EF2B875D4D00C58DD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717F89EE2B875D4D00C58DD0 /* Preview Assets.xcassets */; };
+		717F89F92B875D4D00C58DD0 /* KeventyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F89F82B875D4D00C58DD0 /* KeventyTests.swift */; };
+		717F8A032B875D4D00C58DD0 /* KeventyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A022B875D4D00C58DD0 /* KeventyUITests.swift */; };
+		717F8A052B875D4D00C58DD0 /* KeventyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A042B875D4D00C58DD0 /* KeventyUITestsLaunchTests.swift */; };
+		717F8A132B875DA500C58DD0 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A122B875DA500C58DD0 /* CustomARView.swift */; };
+		717F8A152B875E7000C58DD0 /* CustomARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A142B875E7000C58DD0 /* CustomARViewRepresentable.swift */; };
+		717F8A172B8766B000C58DD0 /* sneaker_airforce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 717F8A162B8766B000C58DD0 /* sneaker_airforce.usdz */; };
+		717F8A192B878D4900C58DD0 /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A182B878D4900C58DD0 /* ARAction.swift */; };
+		717F8A1B2B878D9800C58DD0 /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A1A2B878D9800C58DD0 /* ARManager.swift */; };
+		717F8A202B879C8700C58DD0 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A1F2B879C8700C58DD0 /* CreateEventView.swift */; };
+		717F8A222B87A38500C58DD0 /* PlacePickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A212B87A38500C58DD0 /* PlacePickerField.swift */; };
+		717F8A242B87A7C100C58DD0 /* PlacePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A232B87A7C100C58DD0 /* PlacePickerView.swift */; };
+		71E5ABAC2B885673004F7189 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABAB2B885673004F7189 /* Contants.swift */; };
+		71E5ABAF2B885704004F7189 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABAE2B885704004F7189 /* User.swift */; };
+		71E5ABB12B88572B004F7189 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABB02B88572B004F7189 /* API.swift */; };
+		71E5ABB32B8858E1004F7189 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABB22B8858E1004F7189 /* NetworkManager.swift */; };
+		71E5ABB52B885C6B004F7189 /* ExplorePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABB42B885C6B004F7189 /* ExplorePageView.swift */; };
+		71E5ABB72B885CDA004F7189 /* TimeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABB62B885CDA004F7189 /* TimeSelectionView.swift */; };
+		71E5ABB92B886B90004F7189 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 71E5ABB82B886B90004F7189 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		717F89F52B875D4D00C58DD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717F89DC2B875D4900C58DD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 717F89E32B875D4A00C58DD0;
+			remoteInfo = Keventy;
+		};
+		717F89FF2B875D4D00C58DD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717F89DC2B875D4900C58DD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 717F89E32B875D4A00C58DD0;
+			remoteInfo = Keventy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13473EB65024E32D4EE70754 /* Pods_Keventy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keventy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		170DBAC758CE217C9DB1341A /* Pods-Keventy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keventy.release.xcconfig"; path = "Target Support Files/Pods-Keventy/Pods-Keventy.release.xcconfig"; sourceTree = "<group>"; };
+		21B980C9880855CCB6BE1C34 /* Pods_Keventy_KeventyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keventy_KeventyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		717F89E42B875D4A00C58DD0 /* Keventy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keventy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		717F89E72B875D4A00C58DD0 /* KeventyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeventyApp.swift; sourceTree = "<group>"; };
+		717F89E92B875D4A00C58DD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		717F89EB2B875D4D00C58DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		717F89EE2B875D4D00C58DD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		717F89F42B875D4D00C58DD0 /* KeventyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeventyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		717F89F82B875D4D00C58DD0 /* KeventyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeventyTests.swift; sourceTree = "<group>"; };
+		717F89FE2B875D4D00C58DD0 /* KeventyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeventyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		717F8A022B875D4D00C58DD0 /* KeventyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeventyUITests.swift; sourceTree = "<group>"; };
+		717F8A042B875D4D00C58DD0 /* KeventyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeventyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		717F8A122B875DA500C58DD0 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		717F8A142B875E7000C58DD0 /* CustomARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARViewRepresentable.swift; sourceTree = "<group>"; };
+		717F8A162B8766B000C58DD0 /* sneaker_airforce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sneaker_airforce.usdz; sourceTree = "<group>"; };
+		717F8A182B878D4900C58DD0 /* ARAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
+		717F8A1A2B878D9800C58DD0 /* ARManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
+		717F8A1F2B879C8700C58DD0 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
+		717F8A212B87A38500C58DD0 /* PlacePickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePickerField.swift; sourceTree = "<group>"; };
+		717F8A232B87A7C100C58DD0 /* PlacePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePickerView.swift; sourceTree = "<group>"; };
+		71E5ABAB2B885673004F7189 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		71E5ABAE2B885704004F7189 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		71E5ABB02B88572B004F7189 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		71E5ABB22B8858E1004F7189 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		71E5ABB42B885C6B004F7189 /* ExplorePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePageView.swift; sourceTree = "<group>"; };
+		71E5ABB62B885CDA004F7189 /* TimeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectionView.swift; sourceTree = "<group>"; };
+		71E5ABB82B886B90004F7189 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7AB2057946FC81713377785E /* Pods-Keventy-KeventyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keventy-KeventyUITests.release.xcconfig"; path = "Target Support Files/Pods-Keventy-KeventyUITests/Pods-Keventy-KeventyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F016A1A7BC225E200C2A313 /* Pods-Keventy-KeventyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keventy-KeventyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Keventy-KeventyUITests/Pods-Keventy-KeventyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCE250A1EBF604AE39F83EFA /* Pods-KeventyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeventyTests.debug.xcconfig"; path = "Target Support Files/Pods-KeventyTests/Pods-KeventyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C796EDA4A154343E8535BD63 /* Pods-Keventy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keventy.debug.xcconfig"; path = "Target Support Files/Pods-Keventy/Pods-Keventy.debug.xcconfig"; sourceTree = "<group>"; };
+		D867EF5BDCDE7ED52C1CB667 /* Pods-KeventyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeventyTests.release.xcconfig"; path = "Target Support Files/Pods-KeventyTests/Pods-KeventyTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBB440403B7AADD878706DEE /* Pods_KeventyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeventyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		717F89E12B875D4A00C58DD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F0DBFAC31596DA8E52A650 /* Pods_Keventy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717F89F12B875D4D00C58DD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C03D4FE369741546EF75F3 /* Pods_KeventyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717F89FB2B875D4D00C58DD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439FB950C12F52B0F9F9C4AC /* Pods_Keventy_KeventyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31C47ECD1B55B99026D2ECC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C796EDA4A154343E8535BD63 /* Pods-Keventy.debug.xcconfig */,
+				170DBAC758CE217C9DB1341A /* Pods-Keventy.release.xcconfig */,
+				8F016A1A7BC225E200C2A313 /* Pods-Keventy-KeventyUITests.debug.xcconfig */,
+				7AB2057946FC81713377785E /* Pods-Keventy-KeventyUITests.release.xcconfig */,
+				BCE250A1EBF604AE39F83EFA /* Pods-KeventyTests.debug.xcconfig */,
+				D867EF5BDCDE7ED52C1CB667 /* Pods-KeventyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		717F89DB2B875D4900C58DD0 = {
+			isa = PBXGroup;
+			children = (
+				71E5ABB82B886B90004F7189 /* .gitignore */,
+				717F89E62B875D4A00C58DD0 /* Keventy */,
+				717F89F72B875D4D00C58DD0 /* KeventyTests */,
+				717F8A012B875D4D00C58DD0 /* KeventyUITests */,
+				717F89E52B875D4A00C58DD0 /* Products */,
+				31C47ECD1B55B99026D2ECC0 /* Pods */,
+				C6D95E80F0D7AA2F5DF5D5E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		717F89E52B875D4A00C58DD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				717F89E42B875D4A00C58DD0 /* Keventy.app */,
+				717F89F42B875D4D00C58DD0 /* KeventyTests.xctest */,
+				717F89FE2B875D4D00C58DD0 /* KeventyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		717F89E62B875D4A00C58DD0 /* Keventy */ = {
+			isa = PBXGroup;
+			children = (
+				71E5ABAD2B8856FC004F7189 /* Model */,
+				71E5ABAA2B88562E004F7189 /* Network */,
+				71E5ABA12B8849DD004F7189 /* Core */,
+				717F89E72B875D4A00C58DD0 /* KeventyApp.swift */,
+				717F8A162B8766B000C58DD0 /* sneaker_airforce.usdz */,
+				717F89EB2B875D4D00C58DD0 /* Assets.xcassets */,
+				717F89ED2B875D4D00C58DD0 /* Preview Content */,
+				71E5ABAB2B885673004F7189 /* Contants.swift */,
+			);
+			path = Keventy;
+			sourceTree = "<group>";
+		};
+		717F89ED2B875D4D00C58DD0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				717F89EE2B875D4D00C58DD0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		717F89F72B875D4D00C58DD0 /* KeventyTests */ = {
+			isa = PBXGroup;
+			children = (
+				717F89F82B875D4D00C58DD0 /* KeventyTests.swift */,
+			);
+			path = KeventyTests;
+			sourceTree = "<group>";
+		};
+		717F8A012B875D4D00C58DD0 /* KeventyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				717F8A022B875D4D00C58DD0 /* KeventyUITests.swift */,
+				717F8A042B875D4D00C58DD0 /* KeventyUITestsLaunchTests.swift */,
+			);
+			path = KeventyUITests;
+			sourceTree = "<group>";
+		};
+		717F8A112B875D9100C58DD0 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				717F89E92B875D4A00C58DD0 /* ContentView.swift */,
+				717F8A122B875DA500C58DD0 /* CustomARView.swift */,
+				717F8A142B875E7000C58DD0 /* CustomARViewRepresentable.swift */,
+				717F8A182B878D4900C58DD0 /* ARAction.swift */,
+				717F8A1A2B878D9800C58DD0 /* ARManager.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		717F8A1C2B879C3F00C58DD0 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				717F8A1F2B879C8700C58DD0 /* CreateEventView.swift */,
+				717F8A212B87A38500C58DD0 /* PlacePickerField.swift */,
+				717F8A232B87A7C100C58DD0 /* PlacePickerView.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		71E5ABA12B8849DD004F7189 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				717F8A112B875D9100C58DD0 /* AR */,
+				717F8A1C2B879C3F00C58DD0 /* Event */,
+				71E5ABA22B884A0A004F7189 /* Explore */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		71E5ABA22B884A0A004F7189 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				71E5ABB42B885C6B004F7189 /* ExplorePageView.swift */,
+				71E5ABB62B885CDA004F7189 /* TimeSelectionView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		71E5ABAA2B88562E004F7189 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				71E5ABB02B88572B004F7189 /* API.swift */,
+				71E5ABB22B8858E1004F7189 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		71E5ABAD2B8856FC004F7189 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71E5ABAE2B885704004F7189 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6D95E80F0D7AA2F5DF5D5E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13473EB65024E32D4EE70754 /* Pods_Keventy.framework */,
+				21B980C9880855CCB6BE1C34 /* Pods_Keventy_KeventyUITests.framework */,
+				EBB440403B7AADD878706DEE /* Pods_KeventyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		717F89E32B875D4A00C58DD0 /* Keventy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717F8A082B875D4D00C58DD0 /* Build configuration list for PBXNativeTarget "Keventy" */;
+			buildPhases = (
+				B9F899BECFC22793DE1A6C58 /* [CP] Check Pods Manifest.lock */,
+				717F89E02B875D4A00C58DD0 /* Sources */,
+				717F89E12B875D4A00C58DD0 /* Frameworks */,
+				717F89E22B875D4A00C58DD0 /* Resources */,
+				68760277A747855B63991656 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keventy;
+			productName = Keventy;
+			productReference = 717F89E42B875D4A00C58DD0 /* Keventy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		717F89F32B875D4D00C58DD0 /* KeventyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717F8A0B2B875D4D00C58DD0 /* Build configuration list for PBXNativeTarget "KeventyTests" */;
+			buildPhases = (
+				DF4D481B9DC424697DCDE98D /* [CP] Check Pods Manifest.lock */,
+				717F89F02B875D4D00C58DD0 /* Sources */,
+				717F89F12B875D4D00C58DD0 /* Frameworks */,
+				717F89F22B875D4D00C58DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				717F89F62B875D4D00C58DD0 /* PBXTargetDependency */,
+			);
+			name = KeventyTests;
+			productName = KeventyTests;
+			productReference = 717F89F42B875D4D00C58DD0 /* KeventyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		717F89FD2B875D4D00C58DD0 /* KeventyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717F8A0E2B875D4D00C58DD0 /* Build configuration list for PBXNativeTarget "KeventyUITests" */;
+			buildPhases = (
+				618A238EF0ED5EAF67E8D881 /* [CP] Check Pods Manifest.lock */,
+				717F89FA2B875D4D00C58DD0 /* Sources */,
+				717F89FB2B875D4D00C58DD0 /* Frameworks */,
+				717F89FC2B875D4D00C58DD0 /* Resources */,
+				4B9DB822C397268EEB842A31 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				717F8A002B875D4D00C58DD0 /* PBXTargetDependency */,
+			);
+			name = KeventyUITests;
+			productName = KeventyUITests;
+			productReference = 717F89FE2B875D4D00C58DD0 /* KeventyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		717F89DC2B875D4900C58DD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					717F89E32B875D4A00C58DD0 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					717F89F32B875D4D00C58DD0 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 717F89E32B875D4A00C58DD0;
+					};
+					717F89FD2B875D4D00C58DD0 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 717F89E32B875D4A00C58DD0;
+					};
+				};
+			};
+			buildConfigurationList = 717F89DF2B875D4900C58DD0 /* Build configuration list for PBXProject "Keventy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 717F89DB2B875D4900C58DD0;
+			productRefGroup = 717F89E52B875D4A00C58DD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				717F89E32B875D4A00C58DD0 /* Keventy */,
+				717F89F32B875D4D00C58DD0 /* KeventyTests */,
+				717F89FD2B875D4D00C58DD0 /* KeventyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		717F89E22B875D4A00C58DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E5ABB92B886B90004F7189 /* .gitignore in Resources */,
+				717F89EF2B875D4D00C58DD0 /* Preview Assets.xcassets in Resources */,
+				717F8A172B8766B000C58DD0 /* sneaker_airforce.usdz in Resources */,
+				717F89EC2B875D4D00C58DD0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717F89F22B875D4D00C58DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717F89FC2B875D4D00C58DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B9DB822C397268EEB842A31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keventy-KeventyUITests/Pods-Keventy-KeventyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keventy-KeventyUITests/Pods-Keventy-KeventyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Keventy-KeventyUITests/Pods-Keventy-KeventyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		618A238EF0ED5EAF67E8D881 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Keventy-KeventyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68760277A747855B63991656 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keventy/Pods-Keventy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keventy/Pods-Keventy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Keventy/Pods-Keventy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9F899BECFC22793DE1A6C58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Keventy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF4D481B9DC424697DCDE98D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeventyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		717F89E02B875D4A00C58DD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717F8A242B87A7C100C58DD0 /* PlacePickerView.swift in Sources */,
+				717F8A222B87A38500C58DD0 /* PlacePickerField.swift in Sources */,
+				717F89EA2B875D4A00C58DD0 /* ContentView.swift in Sources */,
+				71E5ABB32B8858E1004F7189 /* NetworkManager.swift in Sources */,
+				717F8A192B878D4900C58DD0 /* ARAction.swift in Sources */,
+				717F8A132B875DA500C58DD0 /* CustomARView.swift in Sources */,
+				717F89E82B875D4A00C58DD0 /* KeventyApp.swift in Sources */,
+				71E5ABB52B885C6B004F7189 /* ExplorePageView.swift in Sources */,
+				717F8A1B2B878D9800C58DD0 /* ARManager.swift in Sources */,
+				71E5ABAC2B885673004F7189 /* Contants.swift in Sources */,
+				71E5ABB72B885CDA004F7189 /* TimeSelectionView.swift in Sources */,
+				717F8A152B875E7000C58DD0 /* CustomARViewRepresentable.swift in Sources */,
+				717F8A202B879C8700C58DD0 /* CreateEventView.swift in Sources */,
+				71E5ABB12B88572B004F7189 /* API.swift in Sources */,
+				71E5ABAF2B885704004F7189 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717F89F02B875D4D00C58DD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717F89F92B875D4D00C58DD0 /* KeventyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717F89FA2B875D4D00C58DD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717F8A032B875D4D00C58DD0 /* KeventyUITests.swift in Sources */,
+				717F8A052B875D4D00C58DD0 /* KeventyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		717F89F62B875D4D00C58DD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 717F89E32B875D4A00C58DD0 /* Keventy */;
+			targetProxy = 717F89F52B875D4D00C58DD0 /* PBXContainerItemProxy */;
+		};
+		717F8A002B875D4D00C58DD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 717F89E32B875D4A00C58DD0 /* Keventy */;
+			targetProxy = 717F89FF2B875D4D00C58DD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		717F8A062B875D4D00C58DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		717F8A072B875D4D00C58DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		717F8A092B875D4D00C58DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C796EDA4A154343E8535BD63 /* Pods-Keventy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Keventy/Preview Content\"";
+				DEVELOPMENT_TEAM = CBACKRJ83S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to show the AR world";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kul.boonanake.Keventy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		717F8A0A2B875D4D00C58DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 170DBAC758CE217C9DB1341A /* Pods-Keventy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Keventy/Preview Content\"";
+				DEVELOPMENT_TEAM = CBACKRJ83S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to show the AR world";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kul.boonanake.Keventy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		717F8A0C2B875D4D00C58DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCE250A1EBF604AE39F83EFA /* Pods-KeventyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CBACKRJ83S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kul.boonanake.KeventyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keventy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Keventy";
+			};
+			name = Debug;
+		};
+		717F8A0D2B875D4D00C58DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D867EF5BDCDE7ED52C1CB667 /* Pods-KeventyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CBACKRJ83S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kul.boonanake.KeventyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keventy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Keventy";
+			};
+			name = Release;
+		};
+		717F8A0F2B875D4D00C58DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F016A1A7BC225E200C2A313 /* Pods-Keventy-KeventyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CBACKRJ83S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kul.boonanake.KeventyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Keventy;
+			};
+			name = Debug;
+		};
+		717F8A102B875D4D00C58DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB2057946FC81713377785E /* Pods-Keventy-KeventyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CBACKRJ83S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kul.boonanake.KeventyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Keventy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		717F89DF2B875D4900C58DD0 /* Build configuration list for PBXProject "Keventy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717F8A062B875D4D00C58DD0 /* Debug */,
+				717F8A072B875D4D00C58DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717F8A082B875D4D00C58DD0 /* Build configuration list for PBXNativeTarget "Keventy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717F8A092B875D4D00C58DD0 /* Debug */,
+				717F8A0A2B875D4D00C58DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717F8A0B2B875D4D00C58DD0 /* Build configuration list for PBXNativeTarget "KeventyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717F8A0C2B875D4D00C58DD0 /* Debug */,
+				717F8A0D2B875D4D00C58DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717F8A0E2B875D4D00C58DD0 /* Build configuration list for PBXNativeTarget "KeventyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717F8A0F2B875D4D00C58DD0 /* Debug */,
+				717F8A102B875D4D00C58DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 717F89DC2B875D4900C58DD0 /* Project object */;
+}
