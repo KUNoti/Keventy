@@ -5,7 +5,7 @@ target 'Keventy' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Moya', '~> 15.0'
-
+  pod 'Kingfisher', '~> 7.0'
   # Pods for Keventy
 
   target 'KeventyTests' do

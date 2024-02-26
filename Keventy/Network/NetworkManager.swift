@@ -14,10 +14,14 @@ protocol Networkable {
 }
 
 class NetworkManager: Networkable {
+    static let shared = NetworkManager()
+    
+    private init() {}
+    
     var provider = MoyaProvider<API>(plugins: [NetworkLoggerPlugin()])
     
     func fetchUsers(completion: @escaping (Result<[User], Error>) -> ()) {
-        request(target: .users, completion: completion)
+        request(target: .users , completion: completion)
     }
     
     func fetchUserDetail(userId: Int, completion: @escaping (Result<User, Error>) -> ()) {

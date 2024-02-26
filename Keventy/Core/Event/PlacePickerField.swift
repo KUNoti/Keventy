@@ -16,17 +16,25 @@ struct PlacePickerField: View {
 //    TODO: @Binding var place: LMPlace?
     @Binding var place: Place?
     @State private var showPicker = false
+    @State private var selectPlace: Any?
+    
+    let viewModel = PlacePickerViewModel(searchText: "", selectPlace: "", place: "")
     
     var body: some View {
         HStack {
-            if place != nil {
+            if place == nil {
                 Button(action: {
                     self.showPicker.toggle()
                 }, label: {
-                    Text("Location").foregroundColor(Color(.placeholderText))
+                    Text("Select Location").foregroundColor(.white)
                 })
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .background(.purple)
+                .foregroundColor(.white)
+                .cornerRadius(8)
                 .sheet(isPresented: self.$showPicker, content: {
-                    Text("test")
+                    PlacePickerView(viewModel: viewModel, showModel: $showPicker, selectPlace: $selectPlace)
                 })
             }
             else {
@@ -53,5 +61,6 @@ struct PlacePickerField: View {
 }
 
 #Preview {
-    PlacePickerField(place: .constant(Place(name: "Sample Place", fullExtendedAddress: "Sample Address")))
+//    PlacePickerField(place: .constant(Place(name: "Sample Place", fullExtendedAddress: "Sample Address")))
+    PlacePickerField(place: .constant(nil))
 }

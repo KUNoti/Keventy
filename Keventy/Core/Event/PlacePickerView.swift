@@ -73,16 +73,16 @@ struct PlacePickerView: View {
 //                        selectPlace: self.$selectPlace
 //                )
             }
-            .navigationTitle("Location")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        self.showModel.toggle()
-                    }, label: {
-                        Image(systemName: "xmark")
-                    })
-                }
+        }
+        .navigationTitle("Location")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: {
+                    self.showModel.toggle()
+                }, label: {
+                    Image(systemName: "xmark")
+                })
             }
         }
     }

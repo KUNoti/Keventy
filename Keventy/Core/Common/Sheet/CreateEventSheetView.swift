@@ -1,5 +1,5 @@
 //
-//  CreateEventView.swift
+//  CreateEventSheetView.swift
 //  Keventy
 //
 //  Created by Kul Boonanake on 22/2/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CreateEventViewModel {
+struct CreateEventSheetViewModel {
     var name: String
     var description: String
     var shared: Bool
@@ -16,21 +16,33 @@ struct CreateEventViewModel {
     var startDate: Date
 }
 
-struct CreateEventView: View {
-    
-    @State private var viewModel: CreateEventViewModel
-    
-    init() {
-        _viewModel = State(
-            initialValue: CreateEventViewModel(
-                name: "",
-                description: "",
-                shared: false,
-                startPlace: "",
-                endPlace: "",
-                startDate: .now
-            ))
+struct CreateEventSheetView: View,Sheet {
+    let sheetType: SheetType = .create
+    var title: String {
+        sheetType.text
     }
+    let onClose: () -> Void
+    let onSubmit: () -> Void
+    
+    
+    @State private var viewModel: CreateEventSheetViewModel = .init(
+        name: "",
+        description: "",
+        shared: false,
+        startPlace: "",
+        endPlace: "",
+        startDate: .now
+    )
+    
+    init(
+        onClose: @escaping () -> Void,
+        onSubmit: @escaping () -> Void
+    ) {
+        self.onClose = onClose
+        self.onSubmit = onSubmit
+    }
+    
+    @State var place: Place?
     
     var body: some View {
         NavigationView {
@@ -50,7 +62,7 @@ struct CreateEventView: View {
                                     .placeholderText))
                                 .padding(.top, 3)
                                 .opacity(viewModel.description.isEmpty ? 1 : 0)
-                    })
+                        })
                 }
                 
                 Section(header: Text("Privacy"), footer: Text("A publicly shared trip is visible for everyone. A not pubulicly shared trip is only visible by you and the event followers")) {
@@ -61,16 +73,18 @@ struct CreateEventView: View {
                 
                 Section(header: Text("Start")) {
                     DatePicker("Date", selection: $viewModel.startDate,
-                                    displayedComponents: [.date, .hourAndMinute])
+                               displayedComponents: [.date, .hourAndMinute])
                 }
                 
                 Section(header: Text("End")) {
                     DatePicker("Date", selection: $viewModel.startDate,
-                                    displayedComponents: [.date, .hourAndMinute])
+                               displayedComponents: [.date, .hourAndMinute])
                 }
                 
-                Section(header: Text("Location")) {
-                    // TODO: PlacePickerField(place: $viewModel.place)
+                HStack {
+                    Spacer()
+                    PlacePickerField(place: $place)
+                    Spacer()
                 }
                 
                 Section {
@@ -85,12 +99,16 @@ struct CreateEventView: View {
                         }
                     }
                 }
-                
+            }
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarLeading) {
+                    toolbarView
+                }
             }
         }
     }
 }
 
 #Preview {
-    CreateEventView()
+    CreateEventSheetView(onClose: {}, onSubmit: {})
 }

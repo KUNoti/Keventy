@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView1: View {
     @State private var colors: [Color] = [
         .green,
         .blue,
@@ -50,9 +50,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentView1_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView1()
     }
 }
 

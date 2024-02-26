@@ -11,7 +11,7 @@
 		439FB950C12F52B0F9F9C4AC /* Pods_Keventy_KeventyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B980C9880855CCB6BE1C34 /* Pods_Keventy_KeventyUITests.framework */; };
 		60C03D4FE369741546EF75F3 /* Pods_KeventyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB440403B7AADD878706DEE /* Pods_KeventyTests.framework */; };
 		717F89E82B875D4A00C58DD0 /* KeventyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F89E72B875D4A00C58DD0 /* KeventyApp.swift */; };
-		717F89EA2B875D4A00C58DD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F89E92B875D4A00C58DD0 /* ContentView.swift */; };
+		717F89EA2B875D4A00C58DD0 /* ContentView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F89E92B875D4A00C58DD0 /* ContentView1.swift */; };
 		717F89EC2B875D4D00C58DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717F89EB2B875D4D00C58DD0 /* Assets.xcassets */; };
 		717F89EF2B875D4D00C58DD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717F89EE2B875D4D00C58DD0 /* Preview Assets.xcassets */; };
 		717F89F92B875D4D00C58DD0 /* KeventyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F89F82B875D4D00C58DD0 /* KeventyTests.swift */; };
@@ -22,9 +22,11 @@
 		717F8A172B8766B000C58DD0 /* sneaker_airforce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 717F8A162B8766B000C58DD0 /* sneaker_airforce.usdz */; };
 		717F8A192B878D4900C58DD0 /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A182B878D4900C58DD0 /* ARAction.swift */; };
 		717F8A1B2B878D9800C58DD0 /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A1A2B878D9800C58DD0 /* ARManager.swift */; };
-		717F8A202B879C8700C58DD0 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A1F2B879C8700C58DD0 /* CreateEventView.swift */; };
+		717F8A202B879C8700C58DD0 /* CreateEventSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A1F2B879C8700C58DD0 /* CreateEventSheetView.swift */; };
 		717F8A222B87A38500C58DD0 /* PlacePickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A212B87A38500C58DD0 /* PlacePickerField.swift */; };
 		717F8A242B87A7C100C58DD0 /* PlacePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8A232B87A7C100C58DD0 /* PlacePickerView.swift */; };
+		71D1E8212B8B6570003FC862 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D1E8202B8B6570003FC862 /* BottomBarView.swift */; };
+		71D1E8242B8B8FA7003FC862 /* SheetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D1E8232B8B8FA7003FC862 /* SheetFactory.swift */; };
 		71E5ABAC2B885673004F7189 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABAB2B885673004F7189 /* Contants.swift */; };
 		71E5ABAF2B885704004F7189 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABAE2B885704004F7189 /* User.swift */; };
 		71E5ABB12B88572B004F7189 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABB02B88572B004F7189 /* API.swift */; };
@@ -32,6 +34,13 @@
 		71E5ABB52B885C6B004F7189 /* ExplorePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABB42B885C6B004F7189 /* ExplorePageView.swift */; };
 		71E5ABB72B885CDA004F7189 /* TimeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABB62B885CDA004F7189 /* TimeSelectionView.swift */; };
 		71E5ABB92B886B90004F7189 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 71E5ABB82B886B90004F7189 /* .gitignore */; };
+		71E5ABC72B88D0D8004F7189 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABC62B88D0D8004F7189 /* ContentView2.swift */; };
+		71E5ABC92B88D103004F7189 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABC82B88D103004F7189 /* ARViewContainer.swift */; };
+		71E5ABCB2B88D126004F7189 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABCA2B88D126004F7189 /* ViewModel.swift */; };
+		71E5ABCD2B88D140004F7189 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABCC2B88D140004F7189 /* Coordinator.swift */; };
+		71E5ABCF2B88D174004F7189 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABCE2B88D174004F7189 /* DrawView.swift */; };
+		71E5ABD32B88D5EB004F7189 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABD22B88D5EB004F7189 /* EventCardView.swift */; };
+		71E5ABD52B89A7EB004F7189 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5ABD42B89A7EB004F7189 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +66,7 @@
 		21B980C9880855CCB6BE1C34 /* Pods_Keventy_KeventyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keventy_KeventyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		717F89E42B875D4A00C58DD0 /* Keventy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keventy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		717F89E72B875D4A00C58DD0 /* KeventyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeventyApp.swift; sourceTree = "<group>"; };
-		717F89E92B875D4A00C58DD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		717F89E92B875D4A00C58DD0 /* ContentView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
 		717F89EB2B875D4D00C58DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		717F89EE2B875D4D00C58DD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		717F89F42B875D4D00C58DD0 /* KeventyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeventyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,9 +79,11 @@
 		717F8A162B8766B000C58DD0 /* sneaker_airforce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sneaker_airforce.usdz; sourceTree = "<group>"; };
 		717F8A182B878D4900C58DD0 /* ARAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
 		717F8A1A2B878D9800C58DD0 /* ARManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
-		717F8A1F2B879C8700C58DD0 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
+		717F8A1F2B879C8700C58DD0 /* CreateEventSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventSheetView.swift; sourceTree = "<group>"; };
 		717F8A212B87A38500C58DD0 /* PlacePickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePickerField.swift; sourceTree = "<group>"; };
 		717F8A232B87A7C100C58DD0 /* PlacePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePickerView.swift; sourceTree = "<group>"; };
+		71D1E8202B8B6570003FC862 /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
+		71D1E8232B8B8FA7003FC862 /* SheetFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetFactory.swift; sourceTree = "<group>"; };
 		71E5ABAB2B885673004F7189 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		71E5ABAE2B885704004F7189 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		71E5ABB02B88572B004F7189 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -80,6 +91,13 @@
 		71E5ABB42B885C6B004F7189 /* ExplorePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePageView.swift; sourceTree = "<group>"; };
 		71E5ABB62B885CDA004F7189 /* TimeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectionView.swift; sourceTree = "<group>"; };
 		71E5ABB82B886B90004F7189 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		71E5ABC62B88D0D8004F7189 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		71E5ABC82B88D103004F7189 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		71E5ABCA2B88D126004F7189 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		71E5ABCC2B88D140004F7189 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		71E5ABCE2B88D174004F7189 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		71E5ABD22B88D5EB004F7189 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
+		71E5ABD42B89A7EB004F7189 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7AB2057946FC81713377785E /* Pods-Keventy-KeventyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keventy-KeventyUITests.release.xcconfig"; path = "Target Support Files/Pods-Keventy-KeventyUITests/Pods-Keventy-KeventyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8F016A1A7BC225E200C2A313 /* Pods-Keventy-KeventyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keventy-KeventyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Keventy-KeventyUITests/Pods-Keventy-KeventyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCE250A1EBF604AE39F83EFA /* Pods-KeventyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeventyTests.debug.xcconfig"; path = "Target Support Files/Pods-KeventyTests/Pods-KeventyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -192,34 +210,45 @@
 			path = KeventyUITests;
 			sourceTree = "<group>";
 		};
-		717F8A112B875D9100C58DD0 /* AR */ = {
+		717F8A112B875D9100C58DD0 /* AR1 */ = {
 			isa = PBXGroup;
 			children = (
-				717F89E92B875D4A00C58DD0 /* ContentView.swift */,
+				717F89E92B875D4A00C58DD0 /* ContentView1.swift */,
 				717F8A122B875DA500C58DD0 /* CustomARView.swift */,
 				717F8A142B875E7000C58DD0 /* CustomARViewRepresentable.swift */,
 				717F8A182B878D4900C58DD0 /* ARAction.swift */,
 				717F8A1A2B878D9800C58DD0 /* ARManager.swift */,
 			);
-			path = AR;
+			path = AR1;
 			sourceTree = "<group>";
 		};
 		717F8A1C2B879C3F00C58DD0 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				717F8A1F2B879C8700C58DD0 /* CreateEventView.swift */,
 				717F8A212B87A38500C58DD0 /* PlacePickerField.swift */,
 				717F8A232B87A7C100C58DD0 /* PlacePickerView.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
 		};
+		71D1E8222B8B8F8A003FC862 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				71D1E8232B8B8FA7003FC862 /* SheetFactory.swift */,
+				717F8A1F2B879C8700C58DD0 /* CreateEventSheetView.swift */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
 		71E5ABA12B8849DD004F7189 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				717F8A112B875D9100C58DD0 /* AR */,
+				71E5ABD02B88D5AD004F7189 /* Common */,
+				71E5ABC22B88D083004F7189 /* AR2 */,
+				717F8A112B875D9100C58DD0 /* AR1 */,
 				717F8A1C2B879C3F00C58DD0 /* Event */,
 				71E5ABA22B884A0A004F7189 /* Explore */,
+				71E5ABD42B89A7EB004F7189 /* ContentView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -248,6 +277,60 @@
 				71E5ABAE2B885704004F7189 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		71E5ABC22B88D083004F7189 /* AR2 */ = {
+			isa = PBXGroup;
+			children = (
+				71E5ABC52B88D0C2004F7189 /* View */,
+				71E5ABC42B88D0BC004F7189 /* ViewModel */,
+				71E5ABC32B88D0A8004F7189 /* Coordinator */,
+			);
+			path = AR2;
+			sourceTree = "<group>";
+		};
+		71E5ABC32B88D0A8004F7189 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				71E5ABCC2B88D140004F7189 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		71E5ABC42B88D0BC004F7189 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				71E5ABCA2B88D126004F7189 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71E5ABC52B88D0C2004F7189 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71E5ABC62B88D0D8004F7189 /* ContentView2.swift */,
+				71E5ABC82B88D103004F7189 /* ARViewContainer.swift */,
+				71E5ABCE2B88D174004F7189 /* DrawView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71E5ABD02B88D5AD004F7189 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				71D1E8222B8B8F8A003FC862 /* Sheet */,
+				71E5ABD12B88D5BC004F7189 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		71E5ABD12B88D5BC004F7189 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71E5ABD22B88D5EB004F7189 /* EventCardView.swift */,
+				71D1E8202B8B6570003FC862 /* BottomBarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C6D95E80F0D7AA2F5DF5D5E8 /* Frameworks */ = {
@@ -500,20 +583,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E5ABD32B88D5EB004F7189 /* EventCardView.swift in Sources */,
 				717F8A242B87A7C100C58DD0 /* PlacePickerView.swift in Sources */,
 				717F8A222B87A38500C58DD0 /* PlacePickerField.swift in Sources */,
-				717F89EA2B875D4A00C58DD0 /* ContentView.swift in Sources */,
+				717F89EA2B875D4A00C58DD0 /* ContentView1.swift in Sources */,
 				71E5ABB32B8858E1004F7189 /* NetworkManager.swift in Sources */,
 				717F8A192B878D4900C58DD0 /* ARAction.swift in Sources */,
+				71E5ABC72B88D0D8004F7189 /* ContentView2.swift in Sources */,
+				71E5ABCF2B88D174004F7189 /* DrawView.swift in Sources */,
+				71E5ABCD2B88D140004F7189 /* Coordinator.swift in Sources */,
+				71E5ABC92B88D103004F7189 /* ARViewContainer.swift in Sources */,
+				71D1E8212B8B6570003FC862 /* BottomBarView.swift in Sources */,
 				717F8A132B875DA500C58DD0 /* CustomARView.swift in Sources */,
 				717F89E82B875D4A00C58DD0 /* KeventyApp.swift in Sources */,
 				71E5ABB52B885C6B004F7189 /* ExplorePageView.swift in Sources */,
+				71E5ABCB2B88D126004F7189 /* ViewModel.swift in Sources */,
 				717F8A1B2B878D9800C58DD0 /* ARManager.swift in Sources */,
 				71E5ABAC2B885673004F7189 /* Contants.swift in Sources */,
 				71E5ABB72B885CDA004F7189 /* TimeSelectionView.swift in Sources */,
 				717F8A152B875E7000C58DD0 /* CustomARViewRepresentable.swift in Sources */,
-				717F8A202B879C8700C58DD0 /* CreateEventView.swift in Sources */,
+				717F8A202B879C8700C58DD0 /* CreateEventSheetView.swift in Sources */,
 				71E5ABB12B88572B004F7189 /* API.swift in Sources */,
+				71E5ABD52B89A7EB004F7189 /* ContentView.swift in Sources */,
+				71D1E8242B8B8FA7003FC862 /* SheetFactory.swift in Sources */,
 				71E5ABAF2B885704004F7189 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

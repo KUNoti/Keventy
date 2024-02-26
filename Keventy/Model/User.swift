@@ -12,6 +12,7 @@ struct User: Codable {
     let title: String
 
     enum CodingKeys: String, CodingKey {
-        case id, title
+        case id = "id"
+        case title = "title"
     }
 }
