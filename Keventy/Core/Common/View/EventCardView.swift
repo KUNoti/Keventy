@@ -8,7 +8,7 @@
 import SwiftUI
 import Kingfisher
 
-struct Event: Codable {
+struct EventC: Codable {
     let id: String
     let latitude: Double
     let longitude: Double
@@ -33,7 +33,7 @@ struct Tag: Codable {
 
 struct EventCardView: View {
     
-    var event: Event
+    var event: EventC
     
     var body: some View {
             VStack(alignment: .leading, spacing: 32) {

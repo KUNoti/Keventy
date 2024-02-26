@@ -10,6 +10,7 @@ import Moya
 enum API {
     case users
     case userDetail(userId: Int)
+    case events
 }
 
 extension API: TargetType {
@@ -27,6 +28,8 @@ extension API: TargetType {
             return Constants.API.users
         case .userDetail(let userId):
             return Constants.API.users + String(userId)
+        case .events:
+            return Constants.API.events
         }
     }
     
@@ -40,7 +43,7 @@ extension API: TargetType {
     // In this example we will not pass anything in the body of the request.
     var task: Task {
         switch self {
-        case .users, .userDetail:
+        case .users, .userDetail, .events:
             return .requestPlain
         }
     }

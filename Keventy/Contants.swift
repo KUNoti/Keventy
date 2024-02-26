@@ -9,8 +9,9 @@ import SwiftUI
 
 enum Constants {
     enum API {
-        static let baseUrl = "https://jsonplaceholder.typicode.com/"
+        static let baseUrl = "http://localhost:8000/"
         static let users = "todos/"
+        static let events = "test"
     }
 }
 

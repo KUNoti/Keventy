@@ -18,12 +18,12 @@ struct ContentView: View {
             }
             
             if selectedTab == .search{
-                Text("Search")
+                ExplorePage()
             }
             
-//            if selectedTab == .plus{
-//                Text("Add")
-//            }
+            //            if selectedTab == .plus{
+            //                Text("Add")
+            //            }
             if selectedTab == .notification{
                 Text("Notification")
             }

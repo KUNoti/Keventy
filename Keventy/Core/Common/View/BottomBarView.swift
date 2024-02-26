@@ -37,7 +37,7 @@ struct BottomBar: View {
             Button {
                 selectedTab = .search
             } label: {
-                BottomBarButtonView(image: "magnifyingglass", text: "Search", isActive: selectedTab == .search)
+                BottomBarButtonView(image: "magnifyingglass", text: "Explore", isActive: selectedTab == .search)
             }
             
             Button {

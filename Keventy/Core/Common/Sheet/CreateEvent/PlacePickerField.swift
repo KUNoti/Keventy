@@ -16,7 +16,6 @@ struct PlacePickerField: View {
 //    TODO: @Binding var place: LMPlace?
     @Binding var place: Place?
     @State private var showPicker = false
-    @State private var selectPlace: Any?
     
     let viewModel = PlacePickerViewModel(searchText: "", selectPlace: "", place: "")
     
@@ -26,15 +25,10 @@ struct PlacePickerField: View {
                 Button(action: {
                     self.showPicker.toggle()
                 }, label: {
-                    Text("Select Location").foregroundColor(.white)
+                    Text("Select Location").foregroundColor(Color(.placeholderText))
                 })
-                .padding(.horizontal, 10)
-                .padding(.vertical, 5)
-                .background(.purple)
-                .foregroundColor(.white)
-                .cornerRadius(8)
                 .sheet(isPresented: self.$showPicker, content: {
-                    PlacePickerView(viewModel: viewModel, showModel: $showPicker, selectPlace: $selectPlace)
+                    PlacePickerView(viewModel: viewModel, showModel: $showPicker, selectPlace: $place)
                 })
             }
             else {

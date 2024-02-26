@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "latitude": 13.8517,
+    "longitude": 100.5678,
+    "title": "Music Concert",
+    "image": "https://mpics.mgronline.com/pics/Images/560000007342901.JPEG",
+    "creator": "InnovateTech",
+    "detail": "Explore the latest in technology",
+    "tag": ["Music"],
+    "locationName": "Concert Hall",
+    "startDateTime": "2024-02-10T18:00:000Z",
+    "endDateTime": "2024-02-12T22:00:000Z"
+  },
+  {
+    "id": "2",
+    "latitude": 13.8495,
+    "longitude": 100.569,
+    "title": "Sport Festival",
+    "image": "https://scontent.fbkk13-2.fna.fbcdn.net/v/t1.6435-9/142000152_2716453381999537_4277309584130064089_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=bVc21S_H_IsAX8pm_Sk&_nc_ht=scontent.fbkk13-2.fna&oh=00_AfAiwkIVcN4TuVz2GKRbmh3scaY0d-CfJ5nGVObVH8kxXA&oe=65E5A270",
+    "creator": "InnovateTech",
+    "detail": "Indulge in a variety of sporting activities",
+    "tag": ["Sport"],
+    "locationName": "City Square",
+    "startDateTime": "2024-03-05T12:00:000Z",
+    "endDateTime": "2024-03-07T20:00:000Z"
+  },
+  {
+    "id": "3",
+    "latitude": 13.853,
+    "longitude": 100.566,
+    "title": "KU Workshop",
+    "image": "https://scontent.fbkk12-5.fna.fbcdn.net/v/t1.6435-9/71181913_2418050701617002_6113231577523683328_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=2eSo10iNCgQAX8qSZpe&_nc_ht=scontent.fbkk12-5.fna&oh=00_AfBXXNCGo4po4P2yWM78mLXUxcKTq0PlaNI7_vu8AnALMA&oe=65E589EC",
+    "creator": "InnovateTech",
+    "detail": "Join our informative workshop organized by Kasetsart University",
+    "tag": ["KU"],
+    "locationName": "Community Center",
+    "startDateTime": "2024-04-15T15:30:000Z",
+    "endDateTime": "2024-04-16T18:00:000Z"
+  },
+  {
+    "id": "4",
+    "latitude": 13.8535,
+    "longitude": 100.5665,
+    "title": "Art Exhibition",
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/8d/37/d3/art-gallery-36.jpg?w=1200&h=1200&s=1",
+    "creator": "InnovateTech",
+    "detail": "Immerse yourself in a world of artistic expression",
+    "tag": ["Art"],
+    "locationName": "Art Gallery",
+    "startDateTime": "2024-05-20T10:00:000Z",
+    "endDateTime": "2024-05-22T17:00:000Z"
+  },
+  {
+    "id": "5",
+    "latitude": 13.85,
+    "longitude": 100.565,
+    "title": "Festival",
+    "image": "https://www.prachachat.net/wp-content/uploads/2024/01/ปกนอก-14-728x457.jpg",
+    "creator": "InnovateTech",
+    "detail": "Enjoy a festival atmosphere with various attractions",
+    "tag": ["Festival"],
+    "locationName": "Open Air Theater",
+    "startDateTime": "2024-06-10T20:30:000Z",
+    "endDateTime": "2024-06-12T23:00:000Z"
+  }
+]

@@ -100,9 +100,29 @@ struct CreateEventSheetView: View,Sheet {
                     }
                 }
             }
+//            .toolbar {
+//                ToolbarItemGroup(placement: .navigationBarLeading) {
+//                    toolbarView
+//                }
+//            }
+            .navigationTitle("Event")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItemGroup(placement: .navigationBarLeading) {
-                    toolbarView
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        onClose()
+                    } label: {
+                        Image(systemName: "xmark")
+                            .foregroundStyle(Color(.purple))
+                    }
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        // onClose ...
+                    } label: {
+                        Text("Create")
+                            .foregroundStyle(Color(.purple))
+                    }
                 }
             }
         }

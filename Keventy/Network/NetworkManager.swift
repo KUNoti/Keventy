@@ -27,6 +27,10 @@ class NetworkManager: Networkable {
     func fetchUserDetail(userId: Int, completion: @escaping (Result<User, Error>) -> ()) {
         request(target: .userDetail(userId: userId), completion: completion)
     }
+    
+    func fetchEvents(completion: @escaping (Result<Event, Error>) -> ()) {
+        request(target: .events, completion: completion)
+    }
 }
 
 private extension NetworkManager {

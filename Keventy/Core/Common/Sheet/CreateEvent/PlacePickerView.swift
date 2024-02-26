@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import MapKit
+
 
 struct SearchBar: View {
     @Binding var searchText: String
@@ -59,7 +61,7 @@ struct PlacePickerView: View {
     @ObservedObject var viewModel: PlacePickerViewModel
     
     @Binding var showModel: Bool
-    @Binding var selectPlace: Any?
+    @Binding var selectPlace: Place?
     
     var body: some View {
         NavigationView {
@@ -72,17 +74,21 @@ struct PlacePickerView: View {
 //                        self.$showModel,
 //                        selectPlace: self.$selectPlace
 //                )
+                
+                Spacer()
+                MapView()
             }
-        }
-        .navigationTitle("Location")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button(action: {
-                    self.showModel.toggle()
-                }, label: {
-                    Image(systemName: "xmark")
-                })
+            .navigationTitle("Location")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        self.showModel.toggle()
+                    }, label: {
+                        Image(systemName: "xmark")
+                            .foregroundStyle(Color.purple)
+                    })
+                }
             }
         }
     }
@@ -91,5 +97,5 @@ struct PlacePickerView: View {
 
 
 #Preview {
-    SearchBar(searchText: .constant("test"))
+    PlacePickerView(viewModel: .init(searchText: "", selectPlace: "", place: ""), showModel: .constant(false), selectPlace: .constant(nil))
 }
