@@ -21,6 +21,8 @@ extension EnvironmentValues {
 @main
 struct KeventyApp: App {
     @State private var safeAreaInsets: (top: CGFloat, bottom: CGFloat) = (0, 0)
+    
+    
     var body: some Scene {
         WindowGroup {
             ZStack {

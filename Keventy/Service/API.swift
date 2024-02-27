@@ -2,8 +2,10 @@
 //  API.swift
 //  Keventy
 //
-//  Created by Kul Boonanake on 23/2/24.
+//  Created by Kul Boonanake on 27/2/24.
 //
+
+import Foundation
 
 import Moya
 
@@ -34,7 +36,7 @@ extension API: TargetType {
     }
     
     // Here we specify which method our calls should use.
-    var method: Method {
+    var method: Moya.Method {
         return .get
     }
     

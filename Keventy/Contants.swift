@@ -9,9 +9,10 @@ import SwiftUI
 
 enum Constants {
     enum API {
-        static let baseUrl = "http://localhost:8000/"
+        static let baseUrl = "http://localhost:8000"
         static let users = "todos/"
-        static let events = "test"
+        static let events = "events"
+        static let test = "test"
     }
 }
 

@@ -2,9 +2,10 @@
 //  NetworkManager.swift
 //  Keventy
 //
-//  Created by Kul Boonanake on 23/2/24.
+//  Created by Kul Boonanake on 27/2/24.
 //
 
+import Foundation
 import Moya
 
 protocol Networkable {
@@ -28,7 +29,7 @@ class NetworkManager: Networkable {
         request(target: .userDetail(userId: userId), completion: completion)
     }
     
-    func fetchEvents(completion: @escaping (Result<Event, Error>) -> ()) {
+    func fetchEvents(completion: @escaping (Result<[Event], Error>) -> ()) {
         request(target: .events, completion: completion)
     }
 }
@@ -50,18 +51,3 @@ private extension NetworkManager {
         }
     }
 }
-
-// Usage
-//private func loadUsers(userId: Int) {
-//        startLoading()
-//        networkManager.fetchUserDetail(userId: userId, completion: { [weak self] result in
-//            guard let strongSelf = self else { return }
-//            strongSelf.stopLoading()
-//            switch result {
-//            case .success(let userResponse):
-//                strongSelf.setData(userResponse)
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        })
-//    }
