@@ -11,10 +11,12 @@ struct ContentView: View {
     @State var selectedTab:BottomBarSelectedTab = .home
     @State var isPresentingBottomSheet = false
     
+    let viewModel = ViewModel()
+    
     var body: some View {
         VStack{
             if selectedTab == .home{
-                Text("Home")
+                ContentView2()
             }
             
             if selectedTab == .search{
@@ -39,6 +41,7 @@ struct ContentView: View {
         .sheet(isPresented: $isPresentingBottomSheet, content: {
             CreateEventSheetView(onClose: onClose, onSubmit: {})
         })
+        .environmentObject(viewModel)
     }
 }
 
