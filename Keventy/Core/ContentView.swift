@@ -11,37 +11,38 @@ struct ContentView: View {
     @State var selectedTab:BottomBarSelectedTab = .home
     @State var isPresentingBottomSheet = false
     
-    let viewModel = ViewModel()
-    
     var body: some View {
-        VStack{
-            if selectedTab == .home{
-                ContentView2()
+        NavigationStack{
+            VStack{
+                if selectedTab == .home{
+                    NavigationLink(destination: HomeView()) {
+                        Text("Go to AView")
+                    }
+                }
+                
+                if selectedTab == .search{
+                    ExplorePage()
+                }
+                
+                //            if selectedTab == .plus{
+                //                Text("Add")
+                //            }
+                if selectedTab == .notification{
+                    Text("Notification")
+                }
+                if selectedTab == .profile{
+                    Text("Profile")
+                }
+                Spacer()
+                BottomBar(
+                    selectedTab: $selectedTab,
+                    isPresentingBottomSheet: $isPresentingBottomSheet
+                )
             }
-            
-            if selectedTab == .search{
-                ExplorePage()
-            }
-            
-            //            if selectedTab == .plus{
-            //                Text("Add")
-            //            }
-            if selectedTab == .notification{
-                Text("Notification")
-            }
-            if selectedTab == .profile{
-                Text("Profile")
-            }
-            Spacer()
-            BottomBar(
-                selectedTab: $selectedTab,
-                isPresentingBottomSheet: $isPresentingBottomSheet
-            )
+            .sheet(isPresented: $isPresentingBottomSheet, content: {
+                CreateEventSheetView(onClose: onClose, onSubmit: {})
+            })
         }
-        .sheet(isPresented: $isPresentingBottomSheet, content: {
-            CreateEventSheetView(onClose: onClose, onSubmit: {})
-        })
-        .environmentObject(viewModel)
     }
 }
 

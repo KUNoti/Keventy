@@ -21,7 +21,12 @@ extension EnvironmentValues {
 @main
 struct KeventyApp: App {
     @State private var safeAreaInsets: (top: CGFloat, bottom: CGFloat) = (0, 0)
+    @State private var eventModel = EventModel()
     
+    @StateObject var locationManager = LBSManager()
+    @StateObject var mapViewModel = MapViewModel()
+    @StateObject var placementSettings = PlacementSettings()
+    @StateObject var arSessionManager = ARSessionManager()
     
     var body: some Scene {
         WindowGroup {
@@ -34,6 +39,11 @@ struct KeventyApp: App {
                 
                 ContentView()
                     .environment(\.safeAreaInsets, safeAreaInsets)
+                    .environment(eventModel)
+                    .environmentObject(locationManager)
+                    .environmentObject(mapViewModel)
+                    .environmentObject(placementSettings)
+                    .environmentObject(arSessionManager)
             }
         }
     }

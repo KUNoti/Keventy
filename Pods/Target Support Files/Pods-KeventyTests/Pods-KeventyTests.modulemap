@@ -1,6 +1,0 @@
-framework module Pods_KeventyTests {
-  umbrella header "Pods-KeventyTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

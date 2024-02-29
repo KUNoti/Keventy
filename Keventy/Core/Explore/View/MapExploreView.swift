@@ -24,13 +24,13 @@ struct MapExploreView: View {
     @State private var position: MapCameraPosition = .camera(.kasetsart)
     @State private var selectedEvent: Event?
     var events: [Event]?
-    
+    @State private var searchResults: [Event]?
     
     var body: some View {
         ZStack {
             VStack {
                 Map(position: $position) {
-                    ForEach(events ?? []) { event in
+                    ForEach(searchResults ?? []) { event in
                         Annotation(
                             event.title,
                             coordinate: CLLocationCoordinate2D(
@@ -61,7 +61,12 @@ struct MapExploreView: View {
                 if selectedEvent != nil {
                     EventCardView(event: selectedEvent!)
                 }
+                
+                BeanTagButtons(events: events, searchResults: $searchResults, selectedEvent: $selectedEvent)
             }
+        }
+        .task {
+            self.searchResults = self.events
         }
     }
 }

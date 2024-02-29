@@ -13,7 +13,9 @@ struct ExplorePage: View {
     @State private var error: Error?
     @State private var selectedDate = Date()
     
-    private var viewModel = EventViewModel()
+//    private var viewModel = EventModel()
+    @Environment(EventModel.self) private var viewModel
+
     
     var body: some View {
         VStack {

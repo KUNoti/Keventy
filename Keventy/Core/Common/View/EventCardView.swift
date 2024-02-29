@@ -16,7 +16,6 @@ struct Tag: Codable {
 }
 
 struct EventCardView: View {
-    
     var event: Event
     
     var body: some View {
@@ -35,8 +34,6 @@ struct EventCardView: View {
             .foregroundColor(.white)
             
             HStack {
-//                metricsLabel(value: Float(event.latitude) , systemImage: "heart.fill")
-//                metricsLabel(value: Float(event.longitude), systemImage: "airplane")
                 Label(event.tag, systemImage: "music.quarternote.3")
                     .padding(.vertical, 8)
                     .padding(.horizontal, 12)
@@ -48,7 +45,7 @@ struct EventCardView: View {
             .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .frame(height: 164)
+        .frame(width: UIScreen.main.bounds.width - 20, height: 128)
         .padding()
         .background(backgroundImage)
         .cornerRadius(16)
@@ -82,17 +79,17 @@ extension EventCardView {
     }
 }
 
-#Preview {
+//#Preview {
     
-    return EventCardView(event: .init(id: 1,
-                                      latitude: 13.8517,
-                                      longitude: 100.5678,
-                                      title: "Music Concert",
-                                      image: URL(string: "https://mpics.mgronline.com/pics/Images/560000007342901.JPEG")!,
-                                      creator: "InnovateTech",
-                                      detail: "Explore the latest in technology",
-                                      tag: "Music",
-                                      locationName: "Concert Hall",
-                                      startDateTime: .now,
-                                      endDateTime: .now))
-}
+//    return EventCardView(event: .init(id: 1,
+//                                      latitude: 13.8517,
+//                                      longitude: 100.5678,
+//                                      title: "Music Concert",
+//                                      image: URL(string: "https://mpics.mgronline.com/pics/Images/560000007342901.JPEG")!,
+//                                      creator: "InnovateTech",
+//                                      detail: "Explore the latest in technology",
+//                                      tag: "Music",
+//                                      locationName: "Concert Hall",
+//                                      startDateTime: .now,
+//                                      endDateTime: .now))
+//}
