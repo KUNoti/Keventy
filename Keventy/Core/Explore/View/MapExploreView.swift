@@ -19,6 +19,14 @@ extension MapCamera {
     )
 }
 
+extension MKMapCamera {
+    static let kasetsart = MKMapCamera(
+        lookingAtCenter: CLLocationCoordinate2D(latitude: 13.8465, longitude: 100.5687),
+        fromEyeCoordinate: CLLocationCoordinate2D(latitude: 13.8465, longitude: 100.5687),
+        eyeAltitude: 1000
+    )
+}
+
 
 struct MapExploreView: View {
     @State private var position: MapCameraPosition = .camera(.kasetsart)

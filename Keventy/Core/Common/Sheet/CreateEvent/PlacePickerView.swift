@@ -76,7 +76,7 @@ struct PlacePickerView: View {
 //                )
                 
                 Spacer()
-                MapView()
+//                MapView()
             }
             .navigationTitle("Location")
             .navigationBarTitleDisplayMode(.inline)

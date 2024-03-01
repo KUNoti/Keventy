@@ -18,11 +18,12 @@ class EventModel {
     }
     
     
-    private func loadEvents() {
+    func loadEvents() {
         NetworkManager.shared.fetchEvents { [weak self] result in
             switch result {
             case .success(let response):
                 self?.events = response
+                print("success", response)
             case .failure(let error):
                 print(error.localizedDescription)
             }
