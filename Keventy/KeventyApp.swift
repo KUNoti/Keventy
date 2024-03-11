@@ -24,11 +24,6 @@ struct KeventyApp: App {
     @State private var safeAreaInsets: (top: CGFloat, bottom: CGFloat) = (0, 0)
     @State private var eventModel = EventModel()
     
-    @StateObject private var mapViewModel = MapViewModel()
-    @StateObject var locationManager = LocationBaseManager()
-//    @StateObject var placementSettings = PlacementSettings()
-    @StateObject var arSessionManager = ARSessionManager()
-    
     var body: some Scene {
         WindowGroup {
             ZStack {
@@ -41,9 +36,6 @@ struct KeventyApp: App {
                 ContentView()
                     .environment(\.safeAreaInsets, safeAreaInsets)
                     .environment(eventModel)
-                    .environmentObject(mapViewModel)
-                    .environmentObject(locationManager)
-                    .environmentObject(arSessionManager)
             }
         }
     }

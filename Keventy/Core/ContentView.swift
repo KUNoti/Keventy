@@ -27,7 +27,7 @@ struct ContentView: View {
                 //            }
                 
                 if selectedTab == .notification{
-                    Text("Notification")
+//                    ARNavigationViewControllerWrapper()
                 }
                 if selectedTab == .profile{
                     Text("Profile")

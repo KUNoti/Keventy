@@ -43,10 +43,12 @@ struct CreateEventSheetView: View,Sheet {
     }
     
     @State var place: Place?
+    @StateObject var imageViewModel = ImagePickerModel()
     
     var body: some View {
         NavigationView {
             Form {
+                EditableRectangleProfileImage(viewModel: imageViewModel)
                 Section( header: Text("Event")) {
                     TextField("Name", text: $viewModel.name)
                     
