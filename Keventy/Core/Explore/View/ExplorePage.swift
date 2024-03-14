@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct ExplorePage: View {
-    //    @State private var events: [Event]? = nil
     @State private var isLoading = false
     @State private var error: Error?
     @State private var selectedDate = Date()
     
-//    private var viewModel = EventModel()
     @Environment(EventModel.self) private var viewModel
 
     

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Observation
+import MapKit
 
 struct Event: Decodable, Identifiable, Equatable {
     let id: Int
@@ -36,19 +36,19 @@ struct Event: Decodable, Identifiable, Equatable {
     }
     
     init(id: Int, latitude: Double, longitude: Double, title: String, image: URL, creator: String, detail: String, tag: String, locationName: String, startDateTime: Date, endDateTime: Date) {
-            self.id = id
-            self.latitude = latitude
-            self.longitude = longitude
-            self.title = title
-            self.image = image
-            self.creator = creator
-            self.detail = detail
-            self.tag = tag
-            self.locationName = locationName
-            self.startDateTime = startDateTime
-            self.endDateTime = endDateTime
-        }
-
+        self.id = id
+        self.latitude = latitude
+        self.longitude = longitude
+        self.title = title
+        self.image = image
+        self.creator = creator
+        self.detail = detail
+        self.tag = tag
+        self.locationName = locationName
+        self.startDateTime = startDateTime
+        self.endDateTime = endDateTime
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decode(Int.self, forKey: .id)
@@ -65,22 +65,14 @@ struct Event: Decodable, Identifiable, Equatable {
     }
 }
 
-extension KeyedDecodingContainer {
-    func decodeDate(forKey key: K) throws -> Date {
-        let dateString = try decode(String.self, forKey: key)
-
-        // Custom date formatter to handle the given date format
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
-        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0) // Ensure UTC time zone
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // Ensure consistent parsing
-
-        guard let date = dateFormatter.date(from: dateString) else {
-            throw DecodingError.dataCorruptedError(forKey: key, in: self, debugDescription: "Date string does not match format expected by formatter.")
-        }
-
-        return date
+extension Event {
+    //MARK: - MKMapItem
+    func mapItem() -> MKMapItem {
+        let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let placemark = MKPlacemark(coordinate: location, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = title
+        return mapItem
     }
 }
-
 

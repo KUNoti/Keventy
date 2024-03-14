@@ -15,9 +15,7 @@ struct ContentView: View {
         NavigationStack{
             VStack{
                 if selectedTab == .home{
-                    NavigationLink(destination: HomeView()) {
-                        Text("Go to AView")
-                    }
+                    HomeView()
                 }
                 
                 if selectedTab == .search{

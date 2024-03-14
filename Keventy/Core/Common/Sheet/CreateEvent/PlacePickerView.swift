@@ -68,15 +68,7 @@ struct PlacePickerView: View {
             VStack {
                 SearchBar(searchText: $viewModel.searchText).padding(.top, 8)
                 
-//                PlaceListView(
-//                    places: viewModel.places,
-//                    showModel: 
-//                        self.$showModel,
-//                        selectPlace: self.$selectPlace
-//                )
-                
                 Spacer()
-                MapView()
             }
             .navigationTitle("Location")
             .navigationBarTitleDisplayMode(.inline)
